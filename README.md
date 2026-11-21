@@ -1,34 +1,23 @@
-# SISMAS — Sistem Sekolah SMK Sultan Ismail
+# SISMAS — Sistem Sekolah
 
-Kumpulan sistem web app dalaman untuk kegunaan guru-guru SMK Sultan Ismail, Kota Bharu.
-Semua sistem dibina menggunakan Google Apps Script (percuma, tiada kos hosting).
-Akses dihadkan kepada akaun **moe-dl.edu.my** sahaja.
+Templat sistem web app dalaman untuk sekolah, dibina dengan Google Apps Script (percuma, tiada kos hosting). Akses boleh dihadkan kepada akaun **moe-dl.edu.my** sahaja.
 
 ## Sistem
 
 | Sistem | Fungsi |
 |---|---|
-| 📋 **Sistem OPR** | Isi & jana One Page Report (OPR) program sekolah — borang, pratonton langsung, jana PDF/PNG, rekod automatik ke Google Sheet |
-| 🚪 **Sistem Tempahan Bilik Khas** | Tempah bilik khas sekolah (makmal, STEM Hub, Dewan Utama, dll) — paparan kalendar bulanan |
-| ✅ **Sistem Analisis Kehadiran** | Rekod kehadiran harian pelajar mengikut kelas, dashboard peratus kehadiran, semakan ambang 95% PPD |
+| 📋 **Sistem OPR** | Isi dan jana One Page Report (OPR) program sekolah: borang, pratonton langsung, jana PDF/PNG, rekod automatik ke Google Sheet |
+| 🚪 **Sistem Tempahan Bilik Khas** | Tempah bilik khas sekolah (makmal, STEM Hub, dewan dan lain-lain), dengan paparan kalendar bulanan |
+| ✅ **Sistem Analisis Kehadiran** | Rekod kehadiran harian murid mengikut kelas, papan pemuka peratus kehadiran, semakan ambang 95% |
 
-> **Nota:** Pautan sistem dikongsi secara dalaman kepada guru SMK Sultan Ismail sahaja.
-> Log masuk dengan akaun DELIMa (moe-dl.edu.my) untuk membukanya.
-
-## Status Pembangunan
-
-| Sistem | Status |
-|---|---|
-| OPR | ✅ Live |
-| Tempahan Bilik Khas | ✅ Live |
-| Analisis Kehadiran | ✅ Live |
+> **Nota:** Repo ini ialah **templat neutral**. Nama sekolah, JPN/PPD, lokasi dan logo diisi sendiri dalam bahagian "0. Identiti sekolah" pada borang OPR. Contoh OPR menggunakan data rekaan tanpa gambar sebenar. Pautan sistem yang digunakan di sekolah dikongsi secara dalaman sahaja.
 
 ## Struktur Repo
 
 ```
 sismas/
   opr/
-    index.html          # Templat borang OPR (untuk rujukan/salinan sumber)
+    index.html           # Templat borang OPR (sumber rujukan)
     Code.gs              # Backend Apps Script OPR
     README_SETUP_OPR.md  # Panduan deploy OPR
   README.md              # Fail ini
@@ -36,7 +25,7 @@ sismas/
 
 ## Dibangunkan oleh
 
-Wan Mohd Aizuddin bin Che Mat (Cg Din) — SMK Sultan Ismail, Kota Bharu, Kelantan
+JURULETIH
 
 ---
-*Kemas kini terakhir: Oktober 2026*
+*Kemas kini terakhir: November 2026*

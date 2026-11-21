@@ -1,4 +1,4 @@
-# Sistem OPR SMKSI — Panduan Setup Apps Script
+# Sistem OPR Sekolah — Panduan Setup Apps Script
 
 ## Fail dalam pakej ini
 - `index.html` — templat OPR (borang + pratonton), telah diubah:
@@ -10,13 +10,13 @@
 
 ### 1. Cipta Google Apps Script Project
 1. Pergi ke https://script.google.com → **Projek Baharu**
-2. Namakan projek, contoh: `Sistem OPR SMKSI`
+2. Namakan projek, contoh: `Sistem OPR Sekolah`
 3. Padam kod lalai dalam `Code.gs`, salin-tampal kandungan `Code.gs` yang disediakan
 4. Klik **+** di sebelah "Fail" → **HTML** → namakan `index` (huruf kecil, tanpa `.html`)
 5. Padam kandungan lalai, salin-tampal seluruh kandungan `index.html` yang disediakan
 
 ### 2. Sediakan Folder Drive untuk simpan PDF
-1. Di Google Drive, cipta folder baharu — cadangan nama: **"Rekod OPR SMKSI"**
+1. Di Google Drive, cipta folder baharu — cadangan nama: **"Rekod OPR"**
 2. Buka folder, salin ID folder daripada URL:
    `https://drive.google.com/drive/folders/`**`ID_FOLDER_DI_SINI`**
 3. Dalam `Code.gs`, tukar baris:
@@ -31,7 +31,7 @@ Jika mahu guna Sheet sedia ada, salin ID Sheet ke:
 const SHEET_ID = 'ID_SHEET_ANDA';
 ```
 Jika dibiarkan kosong `''`, sistem akan **automatik mencipta** Sheet baharu
-bernama "Log Rekod OPR SMKSI" pada penghantaran pertama. Semak
+bernama "Log Rekod OPR" pada penghantaran pertama. Semak
 **Execution log** (Lihat > Log Log) untuk dapatkan ID Sheet tersebut, kemudian
 tampal semula ke `SHEET_ID` supaya semua rekod seterusnya masuk ke Sheet yang sama.
 
