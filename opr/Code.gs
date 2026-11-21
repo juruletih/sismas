@@ -1,8 +1,8 @@
-// OPR SMKSI - Apps Script backend
+// OPR Sekolah - Apps Script backend
 // ---------------------------------
 // SEDIA SEBELUM DEPLOY:
 // 1. Tukar FOLDER_ID di bawah kepada ID folder Google Drive
-//    tempat PDF OPR akan disimpan ("Rekod OPR SMKSI").
+//    tempat PDF OPR akan disimpan ("Rekod OPR").
 // 2. Tukar SHEET_ID kepada ID Google Sheet log rekod
 //    (biarkan kosong "" untuk auto-cipta Sheet baharu semasa
 //    panggilan pertama, ID akan dipaparkan dalam Log > Execution log).
@@ -12,7 +12,7 @@ const SHEET_ID  = ''; // kosongkan jika belum ada, akan dicipta automatik
 
 function doGet(e) {
   return HtmlService.createHtmlOutputFromFile('index')
-    .setTitle('Sistem OPR - SMK Sultan Ismail')
+    .setTitle('Sistem OPR Sekolah')
     .addMetaTag('viewport', 'width=device-width, initial-scale=1')
     .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
@@ -121,7 +121,7 @@ function getOrCreateLogSheet() {
     // Semak Log (View > Execution log) untuk dapatkan ID,
     // kemudian tampal ke pemalar SHEET_ID di atas supaya sentiasa
     // menggunakan Sheet yang sama.
-    ss = SpreadsheetApp.create('Log Rekod OPR SMKSI');
+    ss = SpreadsheetApp.create('Log Rekod OPR');
     Logger.log('Sheet baharu dicipta. ID: ' + ss.getId() + ' - URL: ' + ss.getUrl());
   }
 
